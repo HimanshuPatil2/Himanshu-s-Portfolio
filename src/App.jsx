@@ -29,16 +29,18 @@ function App() {
         </main>
 
         <footer className="site-footer container">
-          <div className="footer-socials">
-            <a href="https://github.com/HimanshuPatil2" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/himanshupatil849" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://instagram.com/himanshupatil849" target="_blank" rel="noreferrer">Instagram</a>
-          </div>
-          <div className="footer-credit">
-            Designed and built by Himanshu Patil
-          </div>
-          <div className="footer-copyright">
+          <div className="footer-left">
             © 2026 Himanshu Patil. All rights reserved.
+          </div>
+          <div className="footer-right">
+            <div className="footer-socials">
+              <a href="https://github.com/HimanshuPatil2" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://linkedin.com/in/himanshupatil849" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://instagram.com/himanshupatil849" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+            <div className="footer-credit">
+              Designed and built by Himanshu Patil
+            </div>
           </div>
         </footer>
 
@@ -48,19 +50,26 @@ function App() {
           .site-footer {
             padding: 4rem 0 3rem;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5rem;
+            justify-content: space-between;
+            align-items: flex-end;
             font-size: 0.9rem;
             color: var(--text-tertiary);
             border-top: 1px solid var(--border-color);
             margin-top: 4rem;
-            text-align: center;
+          }
+          .footer-left {
+            color: var(--text-tertiary);
+            padding-bottom: 0.2rem;
+          }
+          .footer-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.75rem;
           }
           .footer-socials {
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
           }
           .footer-socials a {
             color: var(--text-primary);
@@ -72,19 +81,22 @@ function App() {
           }
           .footer-credit {
             color: var(--text-secondary);
-            font-weight: 500;
-          }
-          .footer-copyright {
-            color: var(--text-tertiary);
             font-size: 0.85rem;
           }
-          @media (max-width: 480px) {
+          @media (max-width: 768px) {
             .site-footer {
-              padding: 3rem 1rem;
-              gap: 1.25rem;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              gap: 2rem;
+              padding: 3rem 0;
             }
-            .footer-socials {
-              gap: 1.5rem;
+            .footer-right {
+              align-items: center;
+              order: -1;
+            }
+            .footer-left {
+              font-size: 0.8rem;
             }
           }
         `}</style>
