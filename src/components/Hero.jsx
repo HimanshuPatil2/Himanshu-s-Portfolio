@@ -103,8 +103,8 @@ export default function Hero() {
             padding: 5rem 0 3rem;
           }
           .hero-title {
-            font-size: 2.2rem;
-            white-space: normal; /* Allow wrap only on small mobile */
+            font-size: clamp(1.4rem, 6vw, 2.2rem);
+            white-space: nowrap; /* Attempting one line even on tablets */
           }
           .hero-subtitle {
             font-size: 1rem;
@@ -116,11 +116,12 @@ export default function Hero() {
             padding: 4rem 0 2rem;
           }
           .hero-title {
-            font-size: 1.7rem;
-            line-height: 1.2;
+            font-size: clamp(1.15rem, 5vw, 1.7rem);
+            white-space: normal; /* Force wrap on small phones to avoid overflow */
+            line-height: 1.25;
           }
           .hero-subtitle {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-bottom: 1rem;
           }
           .hero-actions {

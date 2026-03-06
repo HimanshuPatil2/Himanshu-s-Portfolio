@@ -33,14 +33,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Geometric Grid Background */
+  /* Geometric Checks Grid Background */
   background-image:
-    linear-gradient(var(--grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 32px 32px;
-  /* Taller grid shape */
-  background-position: top center;
-  background-repeat: no-repeat, repeat, repeat;
+    linear-gradient(var(--grid-color) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, var(--grid-color) 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: repeat;
   min-height: 100vh;
 }
 
