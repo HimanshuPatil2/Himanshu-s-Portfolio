@@ -69,11 +69,12 @@ export default function Hero() {
         }
 
         .hero-title {
-          font-size: 5.7rem;
+          font-size: clamp(2rem, 8vw, 5.7rem);
           font-weight: 700;
           line-height: 1.1;
           letter-spacing: -0.04em;
           color: var(--text-primary);
+          white-space: nowrap;
         }
 
         .text-gradient {
@@ -91,12 +92,19 @@ export default function Hero() {
           }
         }
 
+        @media (max-width: 1024px) {
+          .hero-title {
+            font-size: 4.5rem;
+          }
+        }
+
         @media (max-width: 768px) {
           .hero {
             padding: 5rem 0 3rem;
           }
           .hero-title {
-            font-size: 2.75rem;
+            font-size: 2.2rem;
+            white-space: normal; /* Allow wrap only on small mobile */
           }
           .hero-subtitle {
             font-size: 1rem;
@@ -105,7 +113,7 @@ export default function Hero() {
 
         @media (max-width: 480px) {
           .hero-title {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
           }
         }
 

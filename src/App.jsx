@@ -18,18 +18,20 @@ function App() {
         <Hero />
         <ToggleShowcase />
         <CompanyLogos />
-        <SkillsGrid />
         <ImageMarquee />
         <Projects />
         <WhatIDo />
+        <SkillsGrid />
         <CTA />
       </main>
 
       <footer className="site-footer container">
         <div className="footer-left">© 2026 Himanshu Patil. All rights reserved.</div>
         <div className="footer-right">
-          <span> Designed and built by Himanshu Patil</span>
-          <a href="https://www.linkedin.com/in/himanshu-patil-b44539256/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/HimanshuPatil2" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/himanshupatil849" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://instagram.com/himanshupatil.2" target="_blank" rel="noreferrer">Instagram</a>
+          <span className="footer-credit">Designed and built by Himanshu Patil</span>
         </div>
       </footer>
 

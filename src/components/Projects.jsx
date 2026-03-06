@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: 'WIFI+BLE Presence Monitor',
       description: 'A smart presence monitor utilizing both WiFi and BLE for accurate indoor tracking.',
-      imgSrc: '/WIFI+BLE presence monitor.jpeg',
+      imgSrc: '/wifi_ble_monitor.jpeg',
       imgBg: '#f8fafc'
     },
     {
