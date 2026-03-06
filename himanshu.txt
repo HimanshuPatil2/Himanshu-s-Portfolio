@@ -1,0 +1,100 @@
+HIMANSHU PATIL
+Email: patilhimanshu980@gmail.com Mobile: +91 9322153341
+LinkedIn: linkedin.com/in/himanshupatil849 GitHub: github.com/HimanshuPatil2
+EDUCATION
+Lovely Professional University Phagwara, Punjab
+Bachelor of Technology in Robotics and Automation Engineering Aug 2023 – Present
+CGPA: 8.64/10 (Top 15%) | School Representative, SEEE (Jan 2025 – Present)
+TECHNICAL SKILLS
+Languages: C++, Python, Embedded C, MATLAB (Simulink, Robotics Toolbox)
+Robotics: Forward/Inverse Kinematics (DH Parameters), ROS2, Gazebo, Path Planning, Motion
+Control, PID Control, Sensor Fusion, SLAM
+CAD & Design: SolidWorks, Solid Edge, Fusion 360, AutoCAD, FEA, Assembly Design, DFM/DFA,
+Rapid Prototyping, 3D Printing (FDM)
+Electronics: KiCAD, Altium Designer, PCB Design (4-layer, SMD), Arduino, Raspberry Pi, STM32,
+ATmega328P, RP2040, Motor Drivers (DRV8825, TB6600)
+Automation: PLC Programming (Ladder Logic, Function Blocks), Industrial Protocols, HMI Design,
+Process Control, Safety Systems
+Tools: Linux (Ubuntu), Git/GitHub, OpenCV, TensorFlow, Proteus, MATLAB/Simulink, Se-
+rial Communication (UART, I2C, SPI, CAN)
+Soft Skills: Communication, Problem-Solving, Presentation, Time Management, Teamwork, Adapt-
+ability
+PROFESSIONAL EXPERIENCE
+Director of Audience Development Oct 2025 – Present
+Openpools.in Bengaluru, Karnataka
+• Driving 40% growth in technology platform engagement through data-driven audience analytics and cross-functional
+collaboration
+• Leading editorial product development team of 5+ members, implementing agile methodologies for rapid iteration
+• Managing strategic partnerships and content distribution channels to maximize reach and user retention
+Technical Intern Jul 2025 – Present
+Indian Army (XI Corps) Jalandhar Cantonment, India
+• Engineered 15+ high-precision CAD models in SolidWorks for defense projects, reducing design iteration time by 35%
+• Researched 8+ advanced materials (composites, alloys) evaluating mechanical properties for field deployment opti-
+mization
+• Accelerated prototyping cycles by 50% using additive manufacturing with ±0.2mm tolerances across 20+ prototypes
+Robotics Intern Jun 2025 – Jul 2025
+Kuro Systems LLP Nashik, Maharashtra
+• Developed trajectory optimization algorithms achieving 25% path smoothness improvement and 18% cycle time
+reduction for industrial gantry robot
+• Designed 12+ mechanical components with FEA validation (safety factor >2.5), built MATLAB GUI reducing physical
+testing by 40%
+• Implemented cubic spline interpolation achieving ±1mm positional accuracy across 500mm workspace
+Student Intern Jun 2025 – Jul 2025
+AutomateX – PLC Based Training for Industrial Automation
+• Configured PLC hydraulic press with 12+ safety interlocks achieving 99.9% operational reliability, reducing downtime
+by 60%
+• Leverged fault detection and recovery sequences for 8-stage industrial process with 22% cycle time optimization
+• Created HMI interfaces for operator control and system monitoring, enhancing operational visibility
+KEY PROJECTS
+Mechatronic Heart – Bio-Inspired Artificial Organ System Feb 2022 – Present
+Patent Published (Application No.: 202411084380 A) | Fusion 360, Arduino IDE, MATLAB
+• Led biomimetic cardiac pump achieving 72 BPM with 40:60 systolic/diastolic ratio, replicating human cardiovascular
+dynamics within 8% accuracy
+• Integrated 6 servos with ATmega328P and 12-bit PCA9685 PWM driver, implementing closed-loop control with <2°
+error and ±5ms cycle precision
+• Synthesized 3D-printed compliant mechanism reducing mechanical stress by 35% – demonstrates medical robotics
+and precision actuation expertise
+3-DOF Robotic Arm with Real-Time Vision-Guided Control Dec 2025
+Autonomous Manipulation System | MATLAB, SolidWorks, Arduino IDE, Bambu Studio
+• Fabricated 400mm reach manipulator (500g payload) using NEMA 17 steppers with 1/32 microstepping, achieving
+positional accuracy of <3mm
+• Deployed DH-parameter forward kinematics and analytical inverse kinematics with 50Hz UART control for real-time
+trajectory updates
+• Executed workspace optimization achieving 85% reachable volume, custom-engineered gripper (45 MPa tensile strength)
+– applicable to collaborative robots
+DriveCore v1 – Compact Integrated Stepper Motor Driver Board Apr 2024
+Embedded Systems Platform | KiCAD, Embedded Systems, Proteus
+• Developed 4-layer PCB with DRV8825 supporting 2.5A motors, integrated voltage regulation (3.3V/5V/12V @ 1A)
+• Established thermal management maintaining junction temperature <85°C, achieved 95% first-pass success rate
+• Streamlined system integration complexity by 60% through onboard JST connectors, validated across 500+ operational
+hours in 8+ robotic projects
+Professor Pico MK1 – Custom RP2040-Based Development Platform Jan 2024
+Embedded Systems Platform | KiCAD, Embedded Systems, Proteus
+• Architected dev board with dual-core ARM Cortex-M0+ @ 133MHz, 16MB Flash, 30 GPIO, USB Type-C connectivity
+• Delivered full hardware design cycle: schematic capture, 2-layer PCB layout optimization, and Gerber file generation
+• Validated design through deployment in 5+ student robotics projects, confirming robustness and application versatility
+LEADERSHIP & EXTRACURRICULAR
+Head of Technical Department Jan 2024 – Present
+Renovation Tech Robotics and Aeromodelling, Lovely Professional University Jalandhar, Punjab
+• Leading technical team of 25+ members across 6 concurrent robotics projects, managing timelines and resource
+allocation
+• Organized 10+ technical workshops on embedded systems, ROS, and CAD design, training 150+ students in practical
+skills
+• Secured 2 major competition victories through strategic coordination and technical excellence
+PATENTS & RECOGNITION
+Patent Publicat:
+• Double Jaw Pliers with Compliant Grip and Ultrasonic Solder Thickness Monitoring (App. No.:
+202511087969 A, Oct 2025) – Novel tooling with integrated ultrasonic sensing, Co-inventor with Dr. Sumit Shoor
+• Mechatronic Heart for Healthcare (App. No.: 202411084380 A, Nov 2024) – Bio-inspired cardiac simulation
+system, Co-inventor with Dr. Harpreet Bedi, Dr. Manoj Singh Adhikari
+Competition Awards:
+• 1st Place (Champion) – Tech Spark Competition, Lovely Professional University (May 2024) – Competed against
+50+ teams
+• First Runner Up – Tech Marathon, Lovely Professional University (Feb 2024) – 24-hour hackathon, 40+ participants
+CERTIFICATIONS
+• MATLAB Onramp – MathWorks (Aug 2024) – Official MATLAB programming certification
+• OpenCV Bootcamp – OpenCV University (Jan 2024) – Computer vision and image processing fundamentals
+• PCB Design with Altium Designer – Altium Education (Jan 2024) – Professional PCB design workflow and
+layout techniques
+• Microcontroller Embedded C Programming – Udemy (Oct 2023) – Advanced embedded C for microcontroller
+applications
