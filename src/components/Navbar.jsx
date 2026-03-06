@@ -273,7 +273,8 @@ export default function Navbar() {
             display: flex;
           }
           .titlebar {
-            gap: 0.75rem;
+            gap: 0.5rem;
+            padding: 0.35rem;
           }
         }
       `}</style>
