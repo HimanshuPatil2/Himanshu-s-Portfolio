@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyImage from './LazyImage';
 
 export default function CTA() {
   return (
@@ -28,7 +29,7 @@ export default function CTA() {
         </div>
 
         <div className="cta-image">
-          <img src="/workspace.png" alt="3D Workspace Illustration" />
+          <LazyImage src="/workspace.png" alt="3D Workspace Illustration" style={{ borderRadius: '16px' }} />
         </div>
       </div>
 

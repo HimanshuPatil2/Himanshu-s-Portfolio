@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyImage from './LazyImage';
 
 export default function Projects() {
   const projects = [
@@ -69,7 +70,7 @@ export default function Projects() {
           <div key={index} className="project-card">
             <div className="project-image-wrapper" style={{ background: project.imgBg }}>
               {project.imgSrc && (
-                <img src={project.imgSrc} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <LazyImage src={project.imgSrc} alt={project.title} style={{ width: '100%', height: '100%', borderRadius: '12px' }} />
               )}
             </div>
 

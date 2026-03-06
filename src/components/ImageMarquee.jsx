@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import LazyImage from './LazyImage';
 
 export default function ImageMarquee() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -102,12 +103,12 @@ export default function ImageMarquee() {
         <div className="images-track">
           {images.map((img, index) => (
             <div key={`set1-${index}`} className="image-item" onClick={() => openModal(img)}>
-              <img src={img} alt={`Showcase ${index + 1}`} className="marquee-img" />
+              <LazyImage src={img} alt={`Showcase ${index + 1}`} className="marquee-img" style={{ height: '375px', width: 'auto', borderRadius: '12px' }} />
             </div>
           ))}
           {images.map((img, index) => (
             <div key={`set2-${index}`} className="image-item" aria-hidden="true" onClick={() => openModal(img)}>
-              <img src={img} alt={`Showcase ${index + 1}`} className="marquee-img" />
+              <LazyImage src={img} alt={`Showcase ${index + 1}`} className="marquee-img" style={{ height: '375px', width: 'auto', borderRadius: '12px' }} />
             </div>
           ))}
         </div>

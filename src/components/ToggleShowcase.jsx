@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LazyImage from './LazyImage';
 
 export default function ToggleShowcase() {
   const [activeTab, setActiveTab] = useState('designing');
@@ -24,9 +25,9 @@ export default function ToggleShowcase() {
 
       <div className="mockup-window">
         {activeTab === 'designing' ? (
-          <img src="/Hardware.jpeg" alt="Hardware Design" className="mockup-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <LazyImage src="/Hardware.jpeg" alt="Hardware Design" className="mockup-image" style={{ width: '100%', borderRadius: '12px' }} />
         ) : (
-          <img src="/software_dark.jpeg" alt="Coding Editor" className="mockup-image" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <LazyImage src="/software_dark.jpeg" alt="Coding Editor" className="mockup-image" style={{ width: '100%', borderRadius: '12px' }} />
         )}
       </div>
 
@@ -82,6 +83,12 @@ export default function ToggleShowcase() {
           width: 100%;
           height: auto;
           display: block;
+        }
+
+        @media (max-width: 768px) {
+          .mockup-window {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+          }
         }
       `}</style>
     </section>
