@@ -33,12 +33,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Small Grid Background with Fade-out */
+  /* Small Grid Background */
   background-image:
-    linear-gradient(to bottom, transparent, var(--bg-color) 80%),
     linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
-  background-size: 100% 100%, 24px 32px, 24px 32px;
+  background-size: 24px 32px, 24px 32px;
   /* Taller grid shape */
   background-position: top center;
   background-repeat: no-repeat, repeat, repeat;

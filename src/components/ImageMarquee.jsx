@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import LazyImage from './LazyImage';
 
 export default function ImageMarquee() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
   const images = [
     '/c1.png',
     '/c2.png',
@@ -12,109 +9,32 @@ export default function ImageMarquee() {
     '/c4.png'
   ];
 
-  const openModal = (imgSrc) => {
-    setSelectedImage(imgSrc);
-    document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-    document.body.style.overflow = 'auto';
-  };
-
-  const modal = selectedImage && ReactDOM.createPortal(
-    <div
-      style={{
-        position: 'fixed',
-        top: 0, left: 0,
-        width: '100vw', height: '100vh',
-        background: 'rgba(0,0,0,0.88)',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        zIndex: 9999,
-        padding: '2rem',
-        boxSizing: 'border-box',
-      }}
-      onClick={closeModal}
-    >
-      {/* Close button fixed to viewport */}
-      <button
-        onClick={closeModal}
-        style={{
-          position: 'fixed',
-          top: '1.5rem',
-          right: '1.5rem',
-          width: '44px',
-          height: '44px',
-          borderRadius: '50%',
-          border: 'none',
-          background: 'rgba(255,255,255,0.95)',
-          color: '#111',
-          fontSize: '20px',
-          fontWeight: 700,
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
-          zIndex: 10000,
-          lineHeight: 1,
-        }}
-      >
-        ✕
-      </button>
-
-      {/* Image container — stops propagation so clicking image doesn't close modal */}
-      <div
-        onClick={e => e.stopPropagation()}
-        style={{
-          maxWidth: '90vw',
-          maxHeight: '90vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <img
-          src={selectedImage}
-          alt="Certificate Full View"
-          style={{
-            maxWidth: '100%',
-            maxHeight: '90vh',
-            width: 'auto',
-            height: 'auto',
-            objectFit: 'contain',
-            borderRadius: '8px',
-            boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
-            display: 'block',
-          }}
-        />
-      </div>
-    </div>,
-    document.body
-  );
-
   return (
     <section className="image-marquee">
       <div className="images-row">
         <div className="images-track">
           {images.map((img, index) => (
-            <div key={`set1-${index}`} className="image-item" onClick={() => openModal(img)}>
-              <LazyImage src={img} alt={`Showcase ${index + 1}`} className="marquee-img" style={{ height: '375px', width: 'auto', borderRadius: '12px' }} />
+            <div key={`set1-${index}`} className="image-item">
+              <LazyImage
+                src={img}
+                alt={`Showcase ${index + 1}`}
+                className="marquee-img"
+                style={{ height: '375px', width: 'auto', borderRadius: '12px' }}
+              />
             </div>
           ))}
           {images.map((img, index) => (
-            <div key={`set2-${index}`} className="image-item" aria-hidden="true" onClick={() => openModal(img)}>
-              <LazyImage src={img} alt={`Showcase ${index + 1}`} className="marquee-img" style={{ height: '375px', width: 'auto', borderRadius: '12px' }} />
+            <div key={`set2-${index}`} className="image-item" aria-hidden="true">
+              <LazyImage
+                src={img}
+                alt={`Showcase ${index + 1}`}
+                className="marquee-img"
+                style={{ height: '375px', width: 'auto', borderRadius: '12px' }}
+              />
             </div>
           ))}
         </div>
       </div>
-
-      {modal}
 
       <style>{`
         .image-marquee {
@@ -151,7 +71,6 @@ export default function ImageMarquee() {
           border-radius: 12px;
           overflow: hidden;
           background: #f1f5f9;
-          cursor: zoom-in;
           transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 

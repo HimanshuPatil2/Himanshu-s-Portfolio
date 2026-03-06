@@ -30,8 +30,8 @@ export default function Navbar() {
 
         <div className="navbar-links">
           <a href="#work" className="nav-link">My work</a>
-          <a href="#skills" className="nav-link">Skills</a>
           <a href="#about" className="nav-link">About</a>
+          <a href="#skills" className="nav-link">Skills</a>
         </div>
 
         <a href="mailto:patilhimanshu980@gmail.com" className="btn-work desktop-only">
