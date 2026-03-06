@@ -41,7 +41,7 @@ export default function SkillsGrid() {
 
   return (
     <section id="skills" className="skills-section container">
-      <h2 className="skills-heading">Technical Skills</h2>
+      <h2 className="skills-heading">What I Have</h2>
       <div className="skills-grid">
         {skillCategories.map((cat) => (
           <div key={cat.label} className="skill-col">

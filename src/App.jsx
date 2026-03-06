@@ -28,7 +28,7 @@ function App() {
       <footer className="site-footer container">
         <div className="footer-left">© 2026 Himanshu Patil. All rights reserved.</div>
         <div className="footer-right">
-          <span>Designed and built by Himanshu Patil</span>
+          <span> Designed and built by Himanshu Patil</span>
           <a href="https://www.linkedin.com/in/himanshu-patil-b44539256/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
