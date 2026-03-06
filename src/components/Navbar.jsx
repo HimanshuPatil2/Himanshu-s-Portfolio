@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="titlebar">
         <div className="profile-section">
           <img src="/himanshu.png" alt="Himanshu Patil" className="profile-dp" />
-          <span className="profile-name">HimanshuPatil</span>
+          <span className="profile-name">Himanshu Patil</span>
         </div>
 
         <div className="navbar-links">
