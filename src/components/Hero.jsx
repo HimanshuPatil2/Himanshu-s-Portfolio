@@ -112,8 +112,23 @@ export default function Hero() {
         }
 
         @media (max-width: 480px) {
+          .hero {
+            padding: 4rem 0 2rem;
+          }
           .hero-title {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
+            line-height: 1.2;
+          }
+          .hero-subtitle {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+          }
+          .hero-actions {
+            gap: 0.75rem;
+          }
+          .btn-light {
+            padding: 0.4rem 1rem;
+            font-size: 0.8rem;
           }
         }
 

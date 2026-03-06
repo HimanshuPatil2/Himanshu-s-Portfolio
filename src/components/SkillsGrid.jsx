@@ -145,6 +145,15 @@ export default function SkillsGrid() {
         @media (max-width: 480px) {
           .skills-grid {
             grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+          .skills-heading {
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+          }
+          .skill-pill {
+            padding: 0.4rem 0.9rem;
+            font-size: 0.85rem;
           }
         }
       `}</style>

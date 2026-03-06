@@ -29,12 +29,16 @@ function App() {
         </main>
 
         <footer className="site-footer container">
-          <div className="footer-left">© 2026 Himanshu Patil. All rights reserved.</div>
-          <div className="footer-right">
-            <a href="https://github.com/HimanshuPatil2" target="_blank" rel="noreferrer"> GitHub</a>
+          <div className="footer-item footer-left">
+            © 2026 Himanshu Patil. All rights reserved.
+          </div>
+          <div className="footer-item footer-socials">
+            <a href="https://github.com/HimanshuPatil2" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/himanshupatil849" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://instagram.com/himanshupatil849" target="_blank" rel="noreferrer">Instagram</a>
-            <span className="footer-credit"> Designed and built by Himanshu Patil</span>
+          </div>
+          <div className="footer-item footer-right">
+            <span className="footer-credit">Designed and built by Himanshu Patil</span>
           </div>
         </footer>
 
@@ -42,38 +46,58 @@ function App() {
 
         <style>{`
           .site-footer {
-            padding: 2rem 0;
+            padding: 3rem 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             font-size: 0.9rem;
             color: var(--text-tertiary);
             border-top: 1px solid var(--border-color);
-            margin-top: 2rem;
+            margin-top: 4rem;
+          }
+          .footer-item {
+            flex: 1;
           }
           .footer-left {
-            color: var(--text-tertiary);
+            text-align: left;
+          }
+          .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
           }
           .footer-right {
-            display: flex;
-            gap: 1.5rem;
-            color: var(--text-secondary);
+            text-align: right;
           }
-          .footer-right a {
+          .footer-socials a {
             color: var(--text-primary);
             font-weight: 500;
+            transition: color 0.2s;
           }
-          @media (max-width: 768px) {
+          .footer-socials a:hover {
+            color: var(--accent-green);
+          }
+          .footer-credit {
+            color: var(--text-secondary);
+          }
+          @media (max-width: 1024px) {
             .site-footer {
               flex-direction: column;
-              align-items: center;
-              gap: 0.75rem;
+              gap: 1.5rem;
               text-align: center;
-              font-size: 0.8rem;
+              padding: 2.5rem 0;
             }
-            .footer-right {
-              flex-direction: column;
-              align-items: center;
-              gap: 0.5rem;
+            .footer-item {
+              flex: none;
+            }
+            .footer-left, .footer-right {
+              text-align: center;
+            }
+          }
+          @media (max-width: 480px) {
+            .footer-socials {
+              gap: 1rem;
+              flex-wrap: wrap;
             }
           }
         `}</style>
