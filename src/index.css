@@ -6,7 +6,7 @@
   --text-tertiary: #9ca3af;
   --accent-green: #22c55e;
   --accent-green-gradient: linear-gradient(90deg, #10b981 0%, #22c55e 100%);
-  --grid-color: rgba(0, 0, 0, 0.08);
+  --grid-color: rgba(0, 0, 0, 0.05);
   /* Darkened for better visibility */
 
   --border-color: #e5e7eb;
